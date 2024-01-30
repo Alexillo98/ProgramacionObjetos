@@ -45,18 +45,14 @@ public class AirConditioning {
     }
 
     public void aumentar(){
-        if(this.temp >= tempMax){
-            this.temp = tempMax;
-        }else{
-            ++this.temp;
+        if(this.temp + 1 <= tempMax){
+            this.temp++;
         }
     }
 
     public void dismuir(){
-        if(this.temp <= tempMin){
-            this.temp = tempMin;
-        }else{
-            --this.temp;
+        if(this.temp -1 >= tempMin){
+            this.temp--;
         }
     }
     @Override
