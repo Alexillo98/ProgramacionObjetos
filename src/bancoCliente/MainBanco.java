@@ -8,6 +8,8 @@ public class MainBanco {
             Sucursal sMayor = new Sucursal(11,"C/ Mayor",bbva);
             Sucursal sEnMedio = new Sucursal(12,"C/ Enmedio",bbva);
 //                Prestec p1 = new Prestec(1000,99,sMayor);
+//                    Client maria = new Client("123456",new HashSet<>(),new HashSet<>());
+//                    maria.setPrestamos(p1);
 //                Prestec p2 = new Prestec(5000,100,sMayor);
         bbva.addSucursal(sMayor);
         bbva.addSucursal(sEnMedio);

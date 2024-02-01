@@ -8,14 +8,12 @@ public class Prestec {
     private int numPrestec;
     private Sucursal sucursal;
     private Client client;
-    private Set<Prestec> prestamos;
 
     public Prestec(int cantidad, int numPrestec, Sucursal sucursal, Client client) {
         this.cantidad = cantidad;
         this.numPrestec = numPrestec;
         this.sucursal = sucursal;
         this.client = client;
-        this.prestamos = new HashSet<>();
     }
 
     public int getCantidad() {
@@ -50,9 +48,6 @@ public class Prestec {
         this.client = client;
     }
 
-    public void addPrestamo(Prestec prestamo){
-        this.prestamos.add(prestamo);
-    }
     @Override
     public String toString(){
         return this.numPrestec + " - " + this.cantidad;
